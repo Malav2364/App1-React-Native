@@ -102,12 +102,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
   sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
+    fontSize: 25,
+    fontWeight: '800',
   },
   sectionDescription: {
     marginTop: 8,
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: '400',
   },
   highlight: {
