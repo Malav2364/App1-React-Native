@@ -1,28 +1,34 @@
 import React from "react";
-import {View, Text, useColorScheme, StyleSheet} from 'react-native';
+import {View, Text, useColorScheme, StyleSheet, Button} from 'react-native';
 
 function flexApp(): JSX.Element {
     return(
-        <View>
-            <View style={styles.flx}>
-                <Text style={styles.border}>Malav Patel</Text>
-                <Text style={styles.border}>Malav Patel</Text>
-                <Text style={styles.border}>Malav Patel</Text>
+        <View style={styles.flx}>
+            <View style={styles.border}>
+                <Text>Malav Patel</Text>
             </View>
+            <View style={styles.border}>
+                <Text >Malav Patel</Text>
+            </View>
+            <View style={styles.border}>
+                <Text >Malav Patel</Text>
+            </View>
+            
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     border:{
+        borderWidth: 2,
         borderColor: 'white',
-        borderWidth: 1,
-        // width: 100
+        padding: 5,
+        borderRadius: 10
     },
     flx:{
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'space-around',
+        justifyContent: 'space-around'
     }
 })
 
