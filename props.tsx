@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text} from "react-native";
+import {View, Text, Image} from "react-native";
 
 type CattProps = {
     name:string;
@@ -17,6 +17,15 @@ const Cafe = () => {
             <Text>Welcome!!</Text>
             <Cat name="Malav"/>
             <Cat name="aarav"/>
+            <Image 
+                source={{
+                    uri:'https://reactnative.dev/docs/assets/p_cat2.png'
+                }}
+                style={{
+                    width:200,
+                    height:200
+                }}
+            />
         </View>
     )
 }
