@@ -1,39 +1,20 @@
 import React from "react";
+import { View, Text, StyleSheet} from "react-native";
 
-import {
-    View,
-    Text,
-    StyleSheet,     //Used for applying css
-    useColorScheme
-} from 'react-native';
-
-function AppPro() : JSX.Element { //used to return jsx components
-    const isDarkMode = useColorScheme() === "light" //color Scheme defining
-    return(
-        <View style={styles.container}>
-            <View style={styles.border}>
-                <Text style={isDarkMode ? styles.darkTxt : styles.whiteTxt}>Hello World</Text>
-            </View>
-        </View>
-    )
+const fl_name = (
+    firstname: string,
+    middlename: string,
+    lastname: string
+) => {
+    return firstname + " "  + middlename + " " + lastname;
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    whiteTxt:{
-        color: 'white'
-    },
-    darkTxt:{
-        color: 'black'
-    },
-    border:{
-        borderColor: 'red',
-        borderWidth: 1
-    }
-})
+
+
+
+const AppPro = () => {
+    return <Text>Your name is {fl_name('Malav', 'Swapnil', 'Patel')}</Text>
+}
+
 
 export default AppPro;
